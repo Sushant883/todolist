@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Create from "./Create";
 import axios from "axios";
 
+
 function Home() {
   const [todos, setTodos] = useState([]);
   useEffect(() => {
@@ -20,7 +21,7 @@ function Home() {
           <h2>No Record</h2>
         </div>
       ) : (
-        todos.map((todo) => <div>{todo}</div>)
+        todos.map((todo) => <div className="task">{todo.task}</div>)
       )}
     </div>
   );
