@@ -17,6 +17,9 @@
     color: white;
     cursor: pointer;
 }
+.line_through {
+    text-decoration: line-through;
+}
 
 
 .task {
